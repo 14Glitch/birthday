@@ -34,8 +34,8 @@
                             <select class="form-select bg-dark shadow text-white rounded-4 border-info"
                                 id="floatingSelect" aria-label="Floating label select example">
                                 <option selected>Insira sua idade</option>
-                                <option value="-18">🔞 ・ -18 anos</option>
-                                <option value="+18">💢 ・ +18 anos</option>
+                                <option value="menos 18">🔞 ・ -18 anos</option>
+                                <option value="mais 18">💢 ・ +18 anos</option>
                             </select>
                             <label for="floatingSelect">Selecione sua idade</label>
                         </div>
@@ -144,6 +144,8 @@
 
                 storedName = localStorage.getItem('userName');
                 storedAge = localStorage.getItem('userAge');
+
+                namewpp = storedName.split(' ')[0];
 
                 $("#exampleModal").modal("hide");
                 $('#insertNick>strong').text(storedName);
